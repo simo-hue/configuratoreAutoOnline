@@ -6,5 +6,6 @@ public enum Alimentazioni {
     METANO,
     GPL,
     ELETTRICA,
-    IBRIDA
+    IBRIDA,
+    IBRIDA_PUG_IN
 }
