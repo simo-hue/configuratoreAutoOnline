@@ -5,6 +5,17 @@ public abstract class Persona {
     private String cognome;
     private String codiceFiscale;
     private String email;
+    private int telefono;
+    private Indirizzo indirizzo;
+
+    public Persona(String nome, String cognome, String codiceFiscale, String email, int telefono, Indirizzo indirizzo) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.telefono = telefono;
+        this.indirizzo = indirizzo;
+        this.codiceFiscale = codiceFiscale;
+        this.email = email;
+    }
 
     public String getNome() {
         return nome;

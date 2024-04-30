@@ -30,4 +30,8 @@ public class Motore {
     public Alimentazioni getAlimentazione() {
         return alimentazione;
     }
+
+    public String toString() {
+        return "Cilindrata: " + cilindrata + " Potenza: " + potenza + " Numero cilindri: " + numeroCilindri + " Alimentazione: " + alimentazione;
+    }
 }

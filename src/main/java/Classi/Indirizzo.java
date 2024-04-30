@@ -40,4 +40,8 @@ public class Indirizzo {
     public String getCivico() {
         return civico;
     }
+
+    public String toString() {
+        return via + ", " + civico + ", " + cap + ", " + citta + ", " + provincia + ", " + nazione;
+    }
 }

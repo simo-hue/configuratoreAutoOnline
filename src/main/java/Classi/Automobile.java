@@ -8,15 +8,27 @@ public class Automobile {
     private String cambio;
     private String prezzo;
     private String immagine;
-
     private Dimensione dimensione;
 
+    private static String[] optionals = {
+        "pastiglie rosse",
+        "cerchi maggiorati",
+        "vetri oscurati",
+        "colore carrozzeria personalizzato",
+        "abbonamento annuale per colonnine pubbliche",
+        "tetto apribile",
+        "interno in pelle",
+        "impianto audio Harman Kardon",
+        "cambio automatico"
+    };
+    
+
     public Automobile(String marca, String modello, String colore, String alimentazione, String cambio, String prezzo, String immagine) {
-        this.marca = marca;
-        this.modello = modello;
-        this.colore = colore;
+        this.marca = marca.toLowerCase();
+        this.modello = modello.toLowerCase();
+        this.colore = colore.toLowerCase();
         this.alimentazione = alimentazione;
-        this.cambio = cambio;
+        this.cambio = cambio.toLowerCase();
         this.prezzo = prezzo;
         this.immagine = immagine;
     }
@@ -67,5 +79,24 @@ public class Automobile {
 
     public String getImmagine() {
         return immagine;
+    }
+
+    // da capire come fare per differenziarli per modello
+    public String[] getOptionalsDisponibili() {
+        switch (marca) {
+            case "audi":
+                
+                break;
+            case "bmw":
+                
+                break;
+            case "alfa romeo":
+                
+                break;
+            default:
+                break;
+        }
+        
+        return optionals;
     }
 }
