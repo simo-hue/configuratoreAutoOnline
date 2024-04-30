@@ -1,28 +1,28 @@
 package Classi;
 
 public class Dimensione {
-    private double lunghezza;
-    private double larghezza;
-    private double altezza;
+    private int lunghezza;
+    private int larghezza;
+    private int altezza;
 
     private int litriBagagliaio;
 
-    public Dimensione(double lunghezza, double larghezza, double altezza, int litriBagagliaio) {
+    public Dimensione(int lunghezza, int larghezza, int altezza, int litriBagagliaio) {
         this.lunghezza = lunghezza;
         this.larghezza = larghezza;
         this.altezza = altezza;
         this.litriBagagliaio = litriBagagliaio;
     }
 
-    public double getLunghezza() {
+    public int getLunghezza() {
         return lunghezza;
     }
 
-    public double getLarghezza() {
+    public int getLarghezza() {
         return larghezza;
     }
 
-    public double getAltezza() {
+    public int getAltezza() {
         return altezza;
     }
 

@@ -1,6 +1,6 @@
 package Classi;
 
-public class Auto {
+public class Automobile {
     private String marca;
     private String modello;
     private String colore;
@@ -11,7 +11,7 @@ public class Auto {
 
     private Dimensione dimensione;
 
-    public Auto(String marca, String modello, String colore, String alimentazione, String cambio, String prezzo, String immagine) {
+    public Automobile(String marca, String modello, String colore, String alimentazione, String cambio, String prezzo, String immagine) {
         this.marca = marca;
         this.modello = modello;
         this.colore = colore;
@@ -39,6 +39,26 @@ public class Auto {
 
     public String getCambio() {
         return cambio;
+    }
+
+    public Dimensione getDimensione() {
+        return dimensione;
+    }
+
+    public int getAltezza() {
+        return dimensione.getAltezza();
+    }
+
+    public int getLarghezza() {
+        return dimensione.getLarghezza();
+    }
+
+    public int getLitriBagagliaio() {
+        return dimensione.getLitriBagagliaio();
+    }
+
+    public int getLunghezza() {
+        return dimensione.getLunghezza();
     }
 
     public String getPrezzo() {
