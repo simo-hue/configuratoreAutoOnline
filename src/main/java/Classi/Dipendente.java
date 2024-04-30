@@ -1,4 +1,6 @@
 package Classi;
 
-public class Dipendente extends Utente{
+import Interfaces.Utente;
+
+public class Dipendente extends Persona implements Utente {
 }
