@@ -1,5 +1,7 @@
 package Classi;
 
+import Enums.Alimentazioni;
+
 public class Motore {
     private int cilindrata;
     private int potenza;

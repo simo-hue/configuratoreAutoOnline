@@ -1,4 +1,4 @@
-package Classi;
+package Enums;
 
 public enum Alimentazioni {
     BENZINA,
