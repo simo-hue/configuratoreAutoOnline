@@ -10,14 +10,12 @@ public class Configurazione {
     private int idConfigurazione;
     private Automobile modelloAutomobile;
     private Motore motore;
-    private Alimentazioni alimentazione;
     private List<Optionals> optionals = new ArrayList<>();
 
     public Configurazione(int idConfigurazione, Automobile modelloAutomobile, Motore motore, Alimentazioni alimentazione, Optionals optionals) {
         this.idConfigurazione = idConfigurazione;
         this.modelloAutomobile = modelloAutomobile;
         this.motore = motore;
-        this.alimentazione = alimentazione;
     }
 
     public int getIdConfigurazione() {
@@ -32,16 +30,12 @@ public class Configurazione {
         return motore;
     }
 
-    public Alimentazioni getAlimentazione() {
-        return alimentazione;
-    }
-
     public List<Optionals> getOptionals() {
         return optionals;
     }
 
     public String toString() {
-        return "Configurazione: " + idConfigurazione + ", " + modelloAutomobile.toString() + ", " + motore.toString() + ", " + alimentazione.toString();
+        return "Configurazione: " + idConfigurazione + ", " + modelloAutomobile.toString() + ", " + motore.toString();
     }
 
     public void setIdConfigurazione(int idConfigurazione) {
@@ -56,11 +50,7 @@ public class Configurazione {
         this.motore = motore;
     }
 
-    public void setAlimentazione(Alimentazioni alimentazione) {
-        this.alimentazione = alimentazione;
-    }
-
-    public void setOptionals(Optionals optionals) {
-        this.optionals = optionals;
+    public void setOptionals(Optionals optional) {
+        this.optionals.add(optional);
     }
 }

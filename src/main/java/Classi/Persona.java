@@ -17,6 +17,13 @@ public abstract class Persona {
         this.email = email;
     }
 
+    public Indirizzo getIndirizzo() {
+        return indirizzo;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
     public String getNome() {
         return nome;
     }
