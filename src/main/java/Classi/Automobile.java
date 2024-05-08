@@ -6,7 +6,7 @@ public class Automobile {
     private String colore;
     private String alimentazione;
     private String cambio;
-    private String prezzo;
+    private double prezzo;
     private String immagine;
     private Dimensione dimensione;
 
@@ -23,7 +23,7 @@ public class Automobile {
     };
     
 
-    public Automobile(String marca, String modello, String colore, String alimentazione, String cambio, String prezzo, String immagine) {
+    public Automobile(String marca, String modello, String colore, String alimentazione, String cambio, double prezzo, String immagine) {
         this.marca = marca.toLowerCase();
         this.modello = modello.toLowerCase();
         this.colore = colore.toLowerCase();
@@ -73,7 +73,7 @@ public class Automobile {
         return dimensione.getLunghezza();
     }
 
-    public String getPrezzo() {
+    public double getPrezzo() {
         return prezzo;
     }
 

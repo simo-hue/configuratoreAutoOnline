@@ -31,8 +31,8 @@ public class Sede {
         return idOrdini;
     }
 
-    public void toString() {
-        System.out.println("Nome: " + nome + ", si trova in " + luogo.toString());
+    public String toString() {
+        return "Nome: " + nome + ", si trova in " + luogo.toString();
     }
 
     public void addOrdine(int idOrdine) {
